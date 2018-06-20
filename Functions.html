@@ -1,0 +1,58 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+    var sum = function(x,y) {
+        var z = x+y;
+        return z;
+    }
+    console.log("2+4=");
+    console.log(sum(2,4));
+
+    var multiply = function(x,y) {
+        var z = 0;
+        for(i=1;i<=y;i++) {
+            z = z+x;
+        }
+        return z;
+    }
+    console.log("8*6=");
+    console.log(multiply(8,6));
+
+    var power = function(x,y) {
+        var z = 1;
+        for(i=1;i<=y;i++) {
+            z = z*x;
+        }
+        return z;
+    }
+    console.log("2^3=");
+    console.log(power(2,3));
+
+    var factorial = function(x) {
+        var z = 1;
+        for (i=x;i>0;i--) {
+            z = z*i;
+        }
+        return z;
+    }
+    console.log("4!=")
+    console.log(factorial(4));
+
+    var fibonacci = function(x) {
+        var z;
+        var fa=[0,1];
+        for(i=2;i<=x; i++) {
+            fa.push(fa[i-2]+fa[i-1]);
+        }
+        z = fa[x];
+        return z;
+    }
+    console.log("the 5th number in the fibonacci sequence is");
+    console.log(fibonacci(5));
+
+
+</script>
+</body>
+</html>
